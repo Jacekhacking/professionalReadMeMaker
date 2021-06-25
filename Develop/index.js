@@ -25,23 +25,33 @@ const questions = [
     },
     {
         type: 'list',
-        name: '',
-        message: ''
+        name: 'license',
+        message: 'What kind of license should your project have?',
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'none']
     },
+
+    //Find better type for dependencies and tests. In the demo they had a default answer.
     {
-        type: '',
+        type: 'input',
         name: 'dependencies',
         message: 'What command should be run to install dependencies?'
+        //default answer should be npm i 
     },
     {
         type: 'input',
         name: 'tests',
         message: 'What command should be run to run tests?'
+        //default answer should be npm test
     },
     {
         type: 'input',
-        name: '',
-        message: ''
+        name: 'info',
+        message: 'What does the user need to know about using the repo?'
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'What does the user need to know about contributing to the repo?'
     }
 ];
 
