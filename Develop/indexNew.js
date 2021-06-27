@@ -20,6 +20,11 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'instillation',
+        message: 'What needs to be installed in order to use this app?'
+    },
+    {
+        type: 'input',
         name: 'credits',
         message: 'Any notable contributions you would like to mention?'
     },
@@ -89,13 +94,13 @@ ${data.description}
 
 ## Installation
 
-Requires node inquirer package.
+${data.instillation}
 
 ## Usage
 
 ${data.info}
-dependencies ${data.dependencies}
-command to run tests ${data.tests}
+dependencies: ${data.dependencies}
+command to run tests: ${data.tests}
 
 
 ## Contributing
